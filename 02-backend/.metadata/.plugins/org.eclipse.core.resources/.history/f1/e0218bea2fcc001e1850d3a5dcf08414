@@ -1,0 +1,27 @@
+package com.library.entities;
+
+import jakarta.persistence.*;
+import lombok.Data;
+
+@Entity
+@Table(name="book")
+@Data
+// @Data annotation of lombok will dynamically create getters and setters for Book
+public class Book {
+
+	private Long id;
+	
+	private String title;
+	
+	private String author;
+	
+	private String description;
+	
+	private int copies;
+	
+	private int copiesAvailable;
+	
+	private String category;
+	
+	private String img;
+}
